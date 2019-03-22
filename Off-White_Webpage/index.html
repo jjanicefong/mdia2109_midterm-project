@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+      <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+      <link href="css/index.css" rel="stylesheet" type="text/css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <title>OFF-WHITE | PRODUCTS</title>
+   </head>
+
+   <body>
+<!--------------HOME PAGE--------------->
+      <div id="home-section">
+         <img src="img/brand-logo.png" alt="Off-White" class="responsive" id="brand-logo">
+         <a href="#product-section" id="view-prod" onclick="viewProd()">>> VIEW PRODUCTS</a>
+<!--------------SLIDESHOW--------------->
+         <div id="slideshow">
+            <div class="slide-wrapper">
+               <div class="slide responsive"><h1 id="htext-1" class="head-text">DEFINING THE GREY AREA</h1></div>
+               <div class="slide responsive"><h1 id="htext-2" class="head-text">BETWEEN BLACK AND WHITE</h1></div>
+               <div class="slide responsive"><h1 id="htext-3" class="head-text">AS THE COLOUR OF</h1></div>
+               <div class="slide responsive"><h1 id="htext-4" class="head-text">OFF-WHITE</h1></div>
+            </div>
+         </div>
+      </div>
+
+<!-----------PRODUCTS PAGE-------------->
+      <div id="product-section">
+         <div id="background-image">
+            <div id="background-word"></div>
+         </div>
+
+<!----------PRODUCTS LEFT NAV ---------->
+         <div id="product-nav">
+            <div id="prod-1" onmouseover="mouse1()">01</div>
+            <div id="prod-2" onmouseover="mouse2()">02</div>
+            <div id="prod-3" onmouseover="mouse3()">03</div>
+            <div id="prod-4" onmouseover="mouse4()">04</div>
+            <div id="prod-5" onmouseover="mouse5()">05</div>
+            <div id="prod-6" onmouseover="mouse6()">06</div>
+            <div id="prod-7" onmouseover="mouse7()">07</div>
+            <div id="prod-8" onmouseover="mouse8()">08</div>
+            <div id="prod-9" onmouseover="mouse9()">09</div>
+            <div id="prod-10" onmouseover="mouse10()">10</div>
+         </div>
+
+<!----------PRODUCTS MAIN INFO --------->
+         <div id="product-info">
+            <div id="product-top-info">
+               <img src="img/right-arrow.svg" id="right-arrow" onclick="next()" alt="rightarrow">
+               <img src="img/right-arrow.svg" id="left-arrow" oncanplay="prev()" alt="leftarrow">
+               <div id="brand-logo-sm">
+                  <img src="img/brand-logo.png" alt="Off-White" class="responsive" id="brand-logo2">
+               </div>
+               <div id="product-name"></div>
+               <img src="img/plus.svg" id="add-btn" onclick="clickDesc()" alt="plus">
+               <img src="img/minus.svg" id="sub-btn" onclick="closeDesc()" alt="minus">
+               <div id="product-desc-box">
+                  <div id="product-desc"></div>
+               </div>
+            </div>
+<!----------PRODUCTS IMAGE ------------>
+            <div id="product-img-section">
+               <div id="product-img"></div>
+            </div>
+<!----------PRODUCTS PRICE ------------>
+            <div id="price-sec">
+               <div id="price-text" class="fade">PRICE //</div>
+               <div id="price-amount">&#36;</div>
+            </div>
+         </div>
+      </div>
+
+      <script src="js/index.js"></script>
+   </body>
+</html>
